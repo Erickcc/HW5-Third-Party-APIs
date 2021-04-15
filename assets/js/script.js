@@ -94,7 +94,8 @@ function updateScreenText(){
 
 
 function updateScreenColors() {
-    var currentHour = today.format('h');
+    var currentHour = today.format('H');
+    
     currentText = 9;
     var textIDs = [text9, text10, text11, text12, text13, text14, text15, text16, text17];
     
@@ -108,7 +109,10 @@ function updateScreenColors() {
             textIDs[i-9].addClass("present");
         }else{
             textIDs[i-9].addClass("past");
+            console.log("current hour: " + currentHour);
+            console.log("current hour: " + currentText);
         }
+        currentText++;
     }
 }
 
