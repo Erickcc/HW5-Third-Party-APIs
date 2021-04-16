@@ -4,11 +4,6 @@ body {
   line-height: 1;
 }
 
-.center{
-  text-align: center;
-  font-size: 17px;
-}
-
 textarea{
   background: transparent;
   background-color: lightgray;
